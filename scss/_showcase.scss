@@ -1,0 +1,57 @@
+.showcase {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/showcase-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1;
+
+  &-layout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba($color-template-dark, 0.9);
+    z-index: -1;
+  }
+
+  // Content
+  &-content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    h2 {
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+
+    h1 {
+      font-family: $font-secundaria;
+      font-size: 4rem;
+      text-transform: uppercase;
+    }
+
+    p {
+      font-size: 1.3rem;
+
+      span {
+        color: $color-template-1;
+      }
+    }
+  }
+}
+
+/* Cursor */
+.txt-type > .txt {
+  border-right: 0.2rem solid #777;
+  color: $color-template-1;
+  font-weight: 700;
+}

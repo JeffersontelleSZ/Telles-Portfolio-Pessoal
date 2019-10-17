@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-primaria;
+  background-color: $color-dark;
+  color: $color-light;
+  font-size: 20px;
+  height: 10000px;
+}
+
+a {
+  text-decoration: none;
+}
+
+// Utilits
+.container {
+  width: 80%;
+  margin: auto;
+}

@@ -1,0 +1,127 @@
+/**
+* Variaveis
+* Color
+* Fonts
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Open Sans", sans-serif;
+  background-color: #333;
+  color: #fff;
+  font-size: 20px;
+  height: 10000px; }
+
+a {
+  text-decoration: none; }
+
+.container {
+  width: 80%;
+  margin: auto; }
+
+.navbar {
+  width: 100%;
+  margin: auto;
+  position: fixed;
+  transition: all 0.4s ease-in;
+  padding: 20px 0;
+  z-index: 3; }
+  .navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .navbar-logo a {
+    font-family: "Righteous", cursive;
+    font-size: 2rem;
+    color: #fff; }
+    .navbar-logo a span {
+      color: #be9955; }
+  .navbar .active::after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    display: block;
+    background-color: #be9955;
+    margin-top: 6px; }
+  .navbar-menu {
+    margin: auto; }
+  .navbar-nav {
+    display: flex;
+    list-style: none; }
+    .navbar-nav .nav-item {
+      margin: 0 15px; }
+    .navbar-nav .nav-link {
+      font-size: 1rem;
+      color: #fff; }
+      .navbar-nav .nav-link:hover::after {
+        content: "";
+        width: 100%;
+        height: 2px;
+        display: block;
+        background-color: #be9955;
+        margin-top: 6px; }
+  .navbar-icons .fab {
+    font-size: 2rem;
+    margin: 0 0.3rem;
+    color: #be9955; }
+
+.navbar-animation {
+  background-color: #333;
+  padding: 10px 0; }
+
+.showcase {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/showcase-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+  z-index: 1; }
+  .showcase-layout {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(12, 12, 12, 0.9);
+    z-index: -1; }
+  .showcase-content {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start; }
+    .showcase-content h2 {
+      font-size: 1.2rem;
+      font-style: italic; }
+    .showcase-content h1 {
+      font-family: "Righteous", cursive;
+      font-size: 4rem;
+      text-transform: uppercase; }
+    .showcase-content p {
+      font-size: 1.3rem; }
+      .showcase-content p span {
+        color: #be9955; }
+
+/* Cursor */
+.txt-type > .txt {
+  border-right: 0.2rem solid #777;
+  color: #be9955;
+  font-weight: 700; }
+
+.btn {
+  display: inline-block;
+  background: #be9955;
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  margin-top: 2rem;
+  border-radius: 2px;
+  box-shadow: 3px 5px 5px rgba(12, 12, 12, 0.5); }
+  .btn:hover {
+    background-color: rgba(190, 153, 85, 0.8); }
