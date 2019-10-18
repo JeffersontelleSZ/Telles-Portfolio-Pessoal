@@ -18,6 +18,11 @@ body {
 a {
   text-decoration: none; }
 
+img {
+  width: 100%;
+  margin: auto;
+  overflow: hidden; }
+
 .container {
   width: 80%;
   margin: 0 auto; }
@@ -56,7 +61,7 @@ a {
     right: -280px;
     width: 280px;
     height: 100vh;
-    background-color: #0c0c0c;
+    background-color: #f2f2f2;
     transition: right 0.4s ease-in; }
   .navbar-nav {
     width: 280px;
@@ -129,6 +134,7 @@ a {
 
 .navbar-animation {
   background-color: #333;
+  box-shadow: 4px 0 4px rgba(190, 153, 85, 0.8);
   padding: 10px 0; }
 
 .showcase {
@@ -187,3 +193,74 @@ a {
   box-shadow: 3px 5px 5px rgba(12, 12, 12, 0.5); }
   .btn:hover {
     background-color: rgba(190, 153, 85, 0.8); }
+
+section {
+  padding: 5rem 0; }
+
+.title {
+  text-transform: uppercase; }
+
+.title-custom {
+  color: #be9955;
+  font-family: "Kaushan Script", cursive;
+  margin-bottom: 1rem; }
+
+.title-sub {
+  font-size: 1rem; }
+
+.title-paragraphy {
+  text-align: justify;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-top: 1rem; }
+
+.content-title {
+  text-align: center;
+  margin-bottom: 4rem; }
+  .content-title::after {
+    content: "";
+    width: 50%;
+    height: 3px;
+    display: block;
+    background-color: #be9955;
+    margin: 8px auto; }
+
+.about {
+  text-align: center; }
+  .about-content {
+    margin-top: 10rem; }
+  .about-img {
+    margin-bottom: 2rem; }
+  .about-dados {
+    margin-top: 3rem;
+    background-color: #333;
+    padding: 0.6rem;
+    border: 5px solid #be9955;
+    box-shadow: 0 0 4px #0c0c0c; }
+    .about-dados ul {
+      list-style: none; }
+    .about-dados li {
+      font-size: 1rem;
+      margin-bottom: 1rem; }
+      .about-dados li span {
+        font-size: 0.8rem;
+        font-style: italic; }
+      .about-dados li::before {
+        content: "\2022";
+        color: #be9955;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em; }
+  .about-icons .fab {
+    font-size: 2rem;
+    color: #be9955; }
+
+@media (min-width: 780px) {
+  .about-img img {
+    margin-bottom: 0; }
+  .about-content {
+    display: flex; }
+  .about-text {
+    margin-left: 3rem; } }

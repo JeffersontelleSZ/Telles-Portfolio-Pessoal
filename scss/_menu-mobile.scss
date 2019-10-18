@@ -11,7 +11,6 @@
 
 // Button click rotate
 .change .bar1 {
-  // -webkit-transform: rotate(-45deg) translate(-7px, 6px);
   transform: rotate(-45deg) translate(-7px, 6px);
 }
 
@@ -20,7 +19,6 @@
 }
 
 .change .bar3 {
-  // -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-6px, -6px);
 }
 
@@ -51,7 +49,7 @@
       right: -280px;
       width: 280px;
       height: 100vh;
-      background-color: $color-template-dark;
+      background-color: $color-template-light;
       transition: right 0.4s ease-in;
     }
 

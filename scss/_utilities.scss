@@ -13,3 +13,46 @@
     background-color: rgba($color-template-1, 0.8);
   }
 }
+
+// Section Padding
+section {
+  padding: 5rem 0;
+}
+
+// Titles
+.title {
+  text-transform: uppercase;
+}
+
+.title-custom {
+  color: $color-template-1;
+  font-family: $font-secundaria;
+  margin-bottom: 1rem;
+}
+
+.title-sub {
+  font-size: 1rem;
+}
+
+.title-paragraphy {
+  text-align: justify;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+
+.content-title {
+  text-align: center;
+  margin-bottom: 4rem;
+
+  // Line After
+  &::after {
+    content: "";
+    width: 50%;
+    height: 3px;
+    display: block;
+    background-color: $color-template-1;
+    margin: 8px auto;
+  }
+}

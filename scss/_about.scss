@@ -1,0 +1,64 @@
+.about {
+  text-align: center;
+
+  // Content
+  &-content {
+    margin-top: 10rem;
+  }
+
+  // imagem
+  &-img {
+    margin-bottom: 2rem;
+  }
+
+  // dados
+  &-dados {
+    margin-top: 3rem;
+    background-color: $color-dark;
+    padding: 0.6rem;
+    border: 5px solid $color-template-1;
+    box-shadow: 0 0 4px $color-template-dark;
+    ul {
+      list-style: none;
+    }
+    li {
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      span {
+        font-size: 0.8rem;
+        font-style: italic;
+      }
+      &::before {
+        content: "\2022";
+        color: $color-template-1;
+        font-weight: bold;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+      }
+    }
+  }
+
+  // Icons
+  &-icons .fab {
+    font-size: 2rem;
+    color: $color-template-1;
+  }
+}
+
+// Media Query
+@media (min-width: 780px) {
+  .about {
+    &-img img {
+      margin-bottom: 0;
+    }
+
+    &-content {
+      display: flex;
+    }
+
+    &-text {
+      margin-left: 3rem;
+    }
+  }
+}
