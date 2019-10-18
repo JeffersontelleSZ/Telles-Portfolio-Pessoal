@@ -21,36 +21,19 @@
       color: $color-template-1;
     }
   }
+}
 
-  // active bar link
-  .active {
-    &::after {
-      content: "";
-      width: 100%;
-      height: 2px;
-      display: block;
-      background-color: $color-template-1;
-      margin-top: 6px;
-    }
-  }
-
-  &-menu {
-    margin: auto;
-  }
-
-  &-nav {
-    display: flex;
-    list-style: none;
-
-    .nav-item {
-      margin: 0 15px;
+// Media Menu Desktop
+@media (min-width: 981px) {
+  .navbar {
+    // Hide Btn Mobile
+    .menu-mobile {
+      display: none;
     }
 
-    .nav-link {
-      font-size: 1rem;
-      color: $color-light;
-
-      &:hover::after {
+    // active bar link
+    .active {
+      &::after {
         content: "";
         width: 100%;
         height: 2px;
@@ -59,15 +42,46 @@
         margin-top: 6px;
       }
     }
-  }
 
-  &-icons .fab {
-    font-size: 2rem;
-    margin: 0 0.3rem;
-    color: $color-template-1;
+    &-menu {
+      display: flex;
+    }
+
+    &-nav {
+      display: flex;
+      list-style: none;
+
+      .nav-item {
+        margin: 0 15px;
+      }
+
+      .nav-link {
+        font-size: 1rem;
+        color: $color-light;
+
+        &:hover::after {
+          content: "";
+          width: 100%;
+          height: 2px;
+          display: block;
+          background-color: $color-template-1;
+          margin-top: 6px;
+        }
+      }
+    }
+
+    &-icons .fab {
+      font-size: 2rem;
+      margin: 0 0.3rem;
+      color: $color-template-1;
+      &:hover {
+        color: rgba($color-template-1, 0.8);
+      }
+    }
   }
 }
 
+// Animation Navbar
 .navbar-animation {
   background-color: $color-dark;
   padding: 10px 0;

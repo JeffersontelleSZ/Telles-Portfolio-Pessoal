@@ -1,9 +1,8 @@
-// Onscroll
+// Onscroll Navbar
 window.onscroll = function() {
   scrollFunction();
 };
 
-// Elementos
 function scrollFunction() {
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.getElementById("navbar").classList.add("navbar-animation");
@@ -12,7 +11,25 @@ function scrollFunction() {
   }
 }
 
-// ES6 Class
+// button mobile
+const menuMobile = document.querySelector(".menu-mobile");
+menuMobile.addEventListener("click", menuClick);
+
+function menuClick() {
+  menuMobile.classList.toggle("change");
+}
+
+// Menu Aside
+let menuBtn = document.querySelector(".menu-mobile");
+let menuNav = document.querySelector(".navbar-menu");
+
+menuBtn.addEventListener("click", openMobile);
+
+function openMobile() {
+  menuNav.classList.toggle("show");
+}
+
+// Funcao letras automaticas
 class TypeWriter {
   constructor(txtElement, words, wait = 3000) {
     this.txtElement = txtElement;

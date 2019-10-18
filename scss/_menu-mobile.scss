@@ -1,0 +1,84 @@
+// Button
+.bar1,
+.bar2,
+.bar3 {
+  width: 28px;
+  height: 3px;
+  background-color: $color-template-1;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+
+// Button click rotate
+.change .bar1 {
+  // -webkit-transform: rotate(-45deg) translate(-7px, 6px);
+  transform: rotate(-45deg) translate(-7px, 6px);
+}
+
+.change .bar2 {
+  opacity: 0;
+}
+
+.change .bar3 {
+  // -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-6px, -6px);
+}
+
+// Aside Menu
+@media (max-width: 980px) {
+  .navbar {
+    .container {
+      display: flex;
+    }
+
+    // Hide Icons
+    &-icons {
+      display: none;
+    }
+
+    // Btn Mobile
+    .menu-mobile {
+      display: block;
+      position: absolute;
+      right: 35px;
+      z-index: 100;
+    }
+
+    // Aside Container
+    &-menu {
+      position: absolute;
+      top: 0;
+      right: -280px;
+      width: 280px;
+      height: 100vh;
+      background-color: $color-template-dark;
+      transition: right 0.4s ease-in;
+    }
+
+    // Navbar Links
+    &-nav {
+      width: 280px;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      list-style: none;
+
+      .nav-item {
+        margin: 2rem 0;
+      }
+
+      .nav-link {
+        color: $color-template-1;
+        text-transform: uppercase;
+      }
+    }
+
+    // Open Menu
+    .show {
+      right: 0;
+      transition: right 0.4s ease-in;
+    }
+  }
+}

@@ -35,7 +35,7 @@
 
     h1 {
       font-family: $font-secundaria;
-      font-size: 4rem;
+      font-size: 3rem;
       text-transform: uppercase;
     }
 
@@ -54,4 +54,6 @@
   border-right: 0.2rem solid #777;
   color: $color-template-1;
   font-weight: 700;
+  font-family: $font-secundaria;
+  font-size: 1.4rem;
 }
