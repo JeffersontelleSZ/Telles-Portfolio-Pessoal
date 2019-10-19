@@ -22,11 +22,18 @@ function menuClick() {
 // Menu Aside
 let menuBtn = document.querySelector(".menu-mobile");
 let menuNav = document.querySelector(".navbar-menu");
+let openValue = false;
 
 menuBtn.addEventListener("click", openMobile);
 
 function openMobile() {
-  menuNav.classList.toggle("show");
+  if (!openValue) {
+    menuNav.classList.add("show");
+    openValue = true;
+  } else {
+    menuNav.classList.remove("show");
+    openValue = false;
+  }
 }
 
 // Funcao letras automaticas
