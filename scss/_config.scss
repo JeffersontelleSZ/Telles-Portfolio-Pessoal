@@ -18,12 +18,12 @@ a {
 
 img {
   width: 100%;
-  margin: auto;
-  overflow: hidden;
+  height: auto;
+  display: block;
 }
 
-// Utilits
+// Container
 .container {
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
 }
