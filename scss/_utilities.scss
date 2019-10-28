@@ -16,7 +16,8 @@
 
 // Titles
 .title {
-  text-transform: uppercase;
+  font-size: 1.3rem;
+  // font-family: $font-secundaria;
 }
 
 .title-custom {
@@ -44,8 +45,8 @@
   // Line After
   &::after {
     content: "";
-    width: 50%;
-    height: 3px;
+    width: 10%;
+    height: 2px;
     display: block;
     background-color: $color-template-1;
     margin: 8px auto;

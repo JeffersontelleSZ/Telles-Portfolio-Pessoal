@@ -94,7 +94,8 @@ img {
   .navbar-logo a {
     font-family: "Kaushan Script", cursive;
     font-size: 2rem;
-    color: #fff; }
+    color: #fff;
+    text-decoration: none !important; }
     .navbar-logo a span {
       color: #be9955; }
 
@@ -183,6 +184,18 @@ img {
   font-family: "Kaushan Script", cursive;
   font-size: 1.4rem; }
 
+.skills {
+  background-color: #333;
+  box-shadow: 0px 0px 3px rgba(12, 12, 12, 0.5); }
+  .skills .progress {
+    background-color: #333; }
+  .skills .progress-title {
+    font-size: 0.7rem;
+    margin: 0;
+    padding: 0; }
+  .skills .bg-template {
+    background-color: #be9955; }
+
 .btn {
   display: inline-block;
   background: #be9955;
@@ -196,7 +209,7 @@ img {
     background-color: rgba(190, 153, 85, 0.8); }
 
 .title {
-  text-transform: uppercase; }
+  font-size: 1.3rem; }
 
 .title-custom {
   color: #be9955;
@@ -218,8 +231,8 @@ img {
   margin-bottom: 4rem; }
   .content-title::after {
     content: "";
-    width: 50%;
-    height: 3px;
+    width: 10%;
+    height: 2px;
     display: block;
     background-color: #be9955;
     margin: 8px auto; }
