@@ -118,7 +118,7 @@ img {
     .navbar-nav .nav-item {
       margin: 0 15px; }
     .navbar-nav .nav-link {
-      font-size: 1rem;
+      font-size: 0.7rem;
       color: #fff; }
       .navbar-nav .nav-link:hover::after {
         content: "";
@@ -128,7 +128,7 @@ img {
         background-color: #be9955;
         margin-top: 6px; }
   .navbar-icons .fab {
-    font-size: 2rem;
+    font-size: 1rem;
     margin: 0 0.3rem;
     color: #be9955; }
     .navbar-icons .fab:hover {
@@ -138,6 +138,19 @@ img {
   background-color: #333;
   box-shadow: 4px 0 4px rgba(190, 153, 85, 0.8);
   padding: 10px 0; }
+
+.portfolio-links {
+  text-align: center; }
+
+.portfolio-link {
+  cursor: pointer;
+  margin: 0 0.5rem;
+  font-size: 0.8rem; }
+  .portfolio-link:hover {
+    color: #be9955 !important; }
+
+.portfolio-active {
+  color: #be9955 !important; }
 
 .servicos-container {
   background-color: #333;
