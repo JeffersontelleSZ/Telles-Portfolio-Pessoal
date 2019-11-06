@@ -58,7 +58,7 @@
       }
 
       .nav-link {
-        font-size: 0.7rem;
+        font-size: 1rem;
         color: $color-light;
 
         &:hover::after {
@@ -73,7 +73,7 @@
     }
 
     &-icons .fab {
-      font-size: 1rem;
+      font-size: 1.2rem;
       margin: 0 0.3rem;
       color: $color-template-1;
       &:hover {

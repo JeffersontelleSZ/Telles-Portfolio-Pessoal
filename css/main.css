@@ -10,8 +10,8 @@
 
 body {
   font-family: "Open Sans", sans-serif;
-  background-color: #333;
-  color: #fff;
+  background-color: #fff;
+  color: #333;
   font-size: 20px;
   height: 10000px; }
 
@@ -118,7 +118,7 @@ img {
     .navbar-nav .nav-item {
       margin: 0 15px; }
     .navbar-nav .nav-link {
-      font-size: 0.7rem;
+      font-size: 1rem;
       color: #fff; }
       .navbar-nav .nav-link:hover::after {
         content: "";
@@ -128,7 +128,7 @@ img {
         background-color: #be9955;
         margin-top: 6px; }
   .navbar-icons .fab {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 0 0.3rem;
     color: #be9955; }
     .navbar-icons .fab:hover {
@@ -155,6 +155,7 @@ img {
 .servicos-container {
   background-color: #333;
   box-shadow: 0px 0px 3px rgba(12, 12, 12, 0.5);
+  color: #fff;
   padding: 0.7rem;
   cursor: pointer; }
   .servicos-container:hover {
@@ -181,6 +182,7 @@ img {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  color: #fff;
   position: relative;
   z-index: 1; }
   .showcase-layout {
@@ -220,7 +222,8 @@ img {
 
 .skills {
   background-color: #333;
-  box-shadow: 0px 0px 3px rgba(12, 12, 12, 0.5); }
+  box-shadow: 0px 0px 3px rgba(12, 12, 12, 0.5);
+  color: #fff; }
   .skills .progress {
     background-color: #333; }
   .skills .progress-title {
