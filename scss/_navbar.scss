@@ -72,6 +72,12 @@
       }
     }
 
+    &-icons a {
+      border: 1px solid $color-template-1;
+      border-radius: 50%;
+      padding: 0.1rem;
+    }
+
     &-icons .fab {
       font-size: 1.2rem;
       margin: 0 0.3rem;

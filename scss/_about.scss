@@ -6,6 +6,11 @@
     margin-top: 10rem;
   }
 
+  // Text
+  &-text {
+    text-align: justify;
+  }
+
   // imagem
   &-img {
     margin-bottom: 2rem;
@@ -33,11 +38,7 @@
   // About Info
   &-info {
     width: 100%;
-    background: $color-dark;
     color: $color-light;
-    border: 1px solid rgba($color-template-dark, 0.4);
-    box-shadow: 2px 2px 3px rgba($color-template-dark, 0.5);
-    padding: 1rem;
     // List
     &--list {
       list-style: none;
@@ -83,10 +84,14 @@
 
       &--icons {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         position: absolute;
         top: 10px;
-        right: 11px;
+        left: 11px;
+
+        a {
+          margin-right: 0.7rem;
+        }
       }
     }
   }

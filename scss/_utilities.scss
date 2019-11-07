@@ -23,11 +23,13 @@
 .title-custom {
   color: $color-template-1;
   font-family: $font-secundaria;
+  text-align: justify;
   margin-bottom: 1rem;
 }
 
 .title-sub {
   font-size: 1rem;
+  font-weight: 300;
 }
 
 .title-paragraphy {
